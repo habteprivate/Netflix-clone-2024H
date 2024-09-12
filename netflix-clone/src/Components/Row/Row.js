@@ -9,7 +9,7 @@ import "./row.css";
 function Row({ title, fetchUrl, isLargeRow }) {
 
   //seting states of movies and movie trailers using useState hook
-  const [movies, setMovies] = useState([]);
+  const [movie, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
   const base_url = "https://image.tmdb.org/t/p/original";
@@ -27,6 +27,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
       }
     })();
   }, [fetchUrl]);
+ console.log(movie);
 
   // creating a function to display each movie trailer on a click
   const handleClick = (movie) => {
@@ -58,7 +59,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     <div className="row">
       <h1>{title}</h1>
       <div className="row__posters">
-        {movies?.map((movie, index) => {
+        {movie?.map((movie, index) => {
           const imagePath = isLargeRow
             ? movie.poster_path
             : movie.backdrop_path;
