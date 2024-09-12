@@ -10,6 +10,7 @@ const Footer = () => {
     <div className="fotter_outer_container">
       <div className="fotter_inner_container">
         <div className="footer_icons">
+  
           <FacebookOutlinedIcon />
           <InstagramIcon />
           <YouTubeIcon />
