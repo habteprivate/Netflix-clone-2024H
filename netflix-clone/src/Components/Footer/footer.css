@@ -24,6 +24,7 @@
 .footer_data {
   display: flex;
   justify-content: space-around; 
+  padding-top: 20px;
 }
 
 .footer_data ul{
@@ -37,6 +38,7 @@
 
 .footer_data ul li{
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .service_code{
@@ -45,7 +47,7 @@
   align-items: center;
   border: #fff 1px solid;
   width: 15%;
-  margin: 10px 15px; 
+  margin: 20px 30px; 
   cursor: pointer;
 }
 
