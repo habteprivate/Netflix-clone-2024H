@@ -30,10 +30,16 @@
 }
 .header_left Li {
   list-style: none;
+  
+  cursor: pointer;
 }
+
 
 .header_right ul{
   list-style: none;
   display: flex; 
   justify-content: space-around;
+}
+.header_right li{
+cursor: pointer;
 }
